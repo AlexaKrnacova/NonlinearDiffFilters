@@ -46,7 +46,7 @@ def CEDTensor(gXX, gXY, gYY, alpha):
       gXY[i, j] = tmpMatrix[0, 1]
       gYY[i, j] = tmpMatrix[1, 1]
   print(
-      "---- CED tensor took {:.2f} seconds".format((time.time() - start_time)))
+      "---- CED tensor took {:.2f} seconds".format((time.time() - start_time))) # TODO time information string
 
 def CED(src, num_iter, tau, alpha, sig, rho):
 

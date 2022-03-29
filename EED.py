@@ -40,7 +40,7 @@ def EEDTensor(gradientsX, gradientsY, lmbd, a, b, c):
       a[i, j] = tmpMatrix[0, 0]
       b[i, j] = tmpMatrix[0, 1]
       c[i, j] = tmpMatrix[1, 1]
-  print("---- EED tensor took %s seconds" % (time.time() - start_time))
+  print("---- EED tensor took %s seconds" % (time.time() - start_time)) #TODO time information string
 
 def EED(src, num_iter, tau, lmbd, sig):
   border = 5 # can be bigger probably
